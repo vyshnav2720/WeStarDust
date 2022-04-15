@@ -1,0 +1,184 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Square+Peg&display=swap');
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+:root {
+    --primarycolor1: #FAF9F6;
+    --primarycolor2: #28282B;
+    --secondarycolor1: #EFEFED;
+    --secondarycolor2: #6B838C;
+    --primaryfont: 'Anonymous Pro', monospace;
+    --brandfont: 'Square Peg', cursive;
+    font-size: 10px;
+    
+    
+}
+
+body {
+    font-family: var(--primaryfont);
+    background-color: var(--primarycolor1);
+    color: var(--primarycolor2);
+    
+    
+    
+}
+
+.header .brandname {
+
+    font-family: var(--brandfont);
+    position: absolute;
+    font-size: 15vw;
+    text-align: center;
+    left: 38vw;
+    margin-top: 5vw;
+    
+}
+
+.header .threeham {
+    position: absolute;
+    top: 13vw;
+    margin-left: 7vw;
+}
+
+.bestselling, .latest, .browse  {
+    text-align: center;
+    background-color: var(--secondarycolor1);
+    position: relative;
+    min-width: 100vw;
+    border-radius: 30px;
+}
+
+.bestselling {
+    top: 40vw;
+}
+
+.latest {
+    top: 50vw;
+}
+
+.browse {
+    top: 60vw;
+    height: 60vw;
+}
+
+
+
+.bestselling p, .latest p {
+    padding: 4vw;
+    font-size: 6vw;
+    font-weight: bolder;
+}
+
+.bestselling img, .latest img {
+    padding-bottom: 5vw;
+}
+
+.browse p {
+    font-size: 6vw;
+    font-weight: bolder;
+    padding-top: 25vw;
+}
+
+
+.footer {
+    height: 150vw;
+    background-color: var(--secondarycolor1);
+    min-width: 100vw;
+    border-radius: 30px;
+    text-align: center;
+    position: relative;
+    top: 70vw;
+}
+
+.footer .tag {
+    padding: 8vw;
+    font-size: 4vw;
+    font-weight: bolder;
+}
+
+.footer .footercollab {
+    display: flex;
+    flex: row;
+    justify-content:center;
+    
+}
+
+.footer .footerwsd, .footerrb {
+    width: 15vw;
+}
+
+.footer .footercross {
+    padding-left: 5vw;
+    padding-right: 5vw;
+    width: 20vw;
+    
+    
+}
+
+.footer form {
+    padding-top: 10vw;
+
+
+
+}
+
+.footer .emailbox {
+    border-radius: 5px;
+    width: 50vw;
+    padding: 2vw;
+    border: none;
+    background-color: var(--primarycolor1);
+
+}
+
+.footer button {
+    margin-left: 3vw;
+    padding: 1.6vw;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--secondarycolor2);
+    color: var(--secondarycolor1);
+    font-weight: bolder;
+}
+
+.footermenu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    background-color: var(--primarycolor1);
+    padding: 6vw;
+    margin-top: 7vw;
+    margin-left:3vw;
+    margin-right: 3vw;
+    min-width: fit-content;
+    border-radius: 30px;
+    font-size: 3vw;
+    font-weight: bolder;
+    
+}
+
+.footer .footersocials {
+    margin-top: 10vw;
+}
+
+
+.footer .footersocials img {
+    width: 7vw;
+    margin: 3vw;
+}
+
+.footer .footercopyrights {
+    margin-top: 3vw;
+    font-size: 4vw;
+}
