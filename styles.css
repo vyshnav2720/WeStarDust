@@ -33,6 +33,15 @@ body {
     
 }
 
+body a {
+    text-decoration:none;
+    color: var(--primarycolor2);
+}
+
+body a:hover {
+    color: var(--secondarycolor2);
+}
+
 .header .brandname {
 
     font-family: var(--brandfont);
@@ -44,11 +53,43 @@ body {
     
 }
 
+
 .header .threeham {
+    display: block;
     position: absolute;
     top: 13vw;
     margin-left: 7vw;
 }
+
+.header .crossham {
+    display: none;
+    position: absolute;
+    top: 13vw;
+    margin-left: 7vw;
+
+}
+
+
+.hammenu {
+    position: absolute;
+    background-color: var(--secondarycolor1);
+    border-radius: 30px;
+    font-size: 7vw;
+    text-align: center;
+    font-weight: bolder;
+    display: none;
+    flex-direction: column;
+    justify-content: flex-start;
+    top: 40vw;
+    min-width: 100vw;
+    z-index: 10;
+}
+
+.hammenu p  {
+    
+    margin: 10vw;
+}
+
 
 .bestselling, .latest, .browse  {
     text-align: center;
@@ -154,7 +195,7 @@ body {
 .footermenu {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
     flex-wrap: nowrap;
     background-color: var(--primarycolor1);
     padding: 6vw;
@@ -163,9 +204,13 @@ body {
     margin-right: 3vw;
     min-width: fit-content;
     border-radius: 30px;
-    font-size: 3vw;
+    font-size: 4vw;
     font-weight: bolder;
     
+}
+
+.footermenu p {
+    margin: 3vw;
 }
 
 .footer .footersocials {
