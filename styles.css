@@ -3,6 +3,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Square+Peg&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Square+Peg&display=swap');
 
 
 * {
@@ -18,7 +19,7 @@
     --secondarycolor1: #EFEFED;
     --secondarycolor2: #6B838C;
     --primaryfont: 'Anonymous Pro', monospace;
-    --brandfont: 'Square Peg', cursive;
+    --brandfont: 'Amatic SC', cursive;
     font-size: 10px;
     
     
@@ -59,6 +60,7 @@ body a:hover {
     position: absolute;
     top: 13vw;
     margin-left: 7vw;
+    width: 8vw;
 }
 
 .header .crossham {
@@ -66,6 +68,7 @@ body a:hover {
     position: absolute;
     top: 13vw;
     margin-left: 7vw;
+    width: 8vw;
 
 }
 
@@ -81,7 +84,8 @@ body a:hover {
     flex-direction: column;
     justify-content: flex-start;
     top: 40vw;
-    min-width: 100vw;
+    min-height: 100vh;
+    width: 100vw;
     z-index: 10;
 }
 
@@ -92,6 +96,7 @@ body a:hover {
 
 
 .bestselling, .latest, .browse  {
+    display: block;
     text-align: center;
     background-color: var(--secondarycolor1);
     position: relative;
@@ -122,6 +127,9 @@ body a:hover {
 
 .bestselling img, .latest img {
     padding-bottom: 5vw;
+    height: 50vw;
+    width: 50vw;
+   
 }
 
 .browse p {
@@ -226,4 +234,40 @@ body a:hover {
 .footer .footercopyrights {
     margin-top: 3vw;
     font-size: 4vw;
+}
+
+
+
+/* RESPONSIVENESS FOR TABLETS */
+
+
+@media screen and (min-width:700px) {
+    
+        .header .brandname {
+            
+            font-size: 12vw;
+            text-align: center;
+            left: 35vw;
+            margin-top: 8vw;
+            
+        }
+    
+        .header .threeham {
+            display: block;
+            position: absolute;
+            top: 13vw;
+            margin-left: 7vw;
+            
+        }
+        
+        .header .crossham {
+            display: none;
+            position: absolute;
+            top: 13vw;
+            margin-left: 7vw;
+        
+        }
+
+       
+
 }
